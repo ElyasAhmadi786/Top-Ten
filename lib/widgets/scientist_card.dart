@@ -22,6 +22,7 @@ class ScientistCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
@@ -202,6 +203,8 @@ class ScientistCard extends StatelessWidget {
                 ],
               ),
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
     return Consumer<LanguageProvider>(
       builder: (context, languageProvider, child) {
         return InkWell(
@@ -399,6 +402,9 @@ class ScientistCard extends StatelessWidget {
                   ),
                 ),
               ],
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
             ),
           ),
@@ -406,6 +412,7 @@ class ScientistCard extends StatelessWidget {
       },
     );
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   Widget _buildScientistImage(String imagePath) {
@@ -426,6 +433,8 @@ class ScientistCard extends StatelessWidget {
       },
     );
   }
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 }

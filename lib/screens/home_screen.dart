@@ -53,16 +53,22 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
     final themeProvider = Provider.of<ThemeProvider>(context);
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       appBar: AppBar(
         title: Consumer<LanguageProvider>(
@@ -70,20 +76,27 @@ class _HomeScreenState extends State<HomeScreen> {
             return Text(
               languageProvider.translate('appTitle'),
 <<<<<<< HEAD
+<<<<<<< HEAD
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: theme.colorScheme.onPrimary,
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 0.5,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
               ),
             );
           },
         ),
+<<<<<<< HEAD
 <<<<<<< HEAD
         backgroundColor: theme.colorScheme.primary,
         foregroundColor: theme.colorScheme.onPrimary,
@@ -101,6 +114,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
           // Language toggle button
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
         actions: [
           IconButton(
             icon: Icon(
@@ -113,6 +128,9 @@ class _HomeScreenState extends State<HomeScreen> {
             },
             tooltip: 'تغییر تم',
           ),
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
           Consumer<LanguageProvider>(
             builder: (context, languageProvider, child) {
@@ -122,13 +140,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       ? Icons.translate
                       : Icons.language,
 <<<<<<< HEAD
+<<<<<<< HEAD
                   color: theme.colorScheme.onPrimary,
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 ),
                 onPressed: () {
                   languageProvider.toggleLanguage();
                 },
+<<<<<<< HEAD
 <<<<<<< HEAD
               );
             },
@@ -141,6 +163,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 icon: Icon(Icons.more_vert, color: theme.colorScheme.onPrimary),
                 color: theme.cardTheme.color,
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 tooltip: languageProvider.translate('changeLanguage'),
               );
             },
@@ -152,6 +176,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 onSelected: (value) {
                   if (value == 'about') {
@@ -173,12 +200,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       children: [
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Icon(Icons.info_outline, color: theme.iconTheme.color),
                         const SizedBox(width: 12),
                         Text(
                           languageProvider.translate('about'),
                           style: TextStyle(color: theme.textTheme.bodyLarge!.color),
                         ),
+=======
+                        const Icon(Icons.info_outline, size: 20),
+                        const SizedBox(width: 12),
+                        Text(languageProvider.translate('about')),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                         const Icon(Icons.info_outline, size: 20),
                         const SizedBox(width: 12),
@@ -192,12 +225,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       children: [
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Icon(Icons.share, color: theme.iconTheme.color),
                         const SizedBox(width: 12),
                         Text(
                           languageProvider.translate('share'),
                           style: TextStyle(color: theme.textTheme.bodyLarge!.color),
                         ),
+=======
+                        const Icon(Icons.share, size: 20),
+                        const SizedBox(width: 12),
+                        Text(languageProvider.translate('share')),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                         const Icon(Icons.share, size: 20),
                         const SizedBox(width: 12),
@@ -211,12 +250,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       children: [
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Icon(Icons.exit_to_app, color: theme.iconTheme.color),
                         const SizedBox(width: 12),
                         Text(
                           languageProvider.translate('exit'),
                           style: TextStyle(color: theme.textTheme.bodyLarge!.color),
                         ),
+=======
+                        const Icon(Icons.exit_to_app, size: 20),
+                        const SizedBox(width: 12),
+                        Text(languageProvider.translate('exit')),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                         const Icon(Icons.exit_to_app, size: 20),
                         const SizedBox(width: 12),
@@ -238,6 +283,7 @@ class _HomeScreenState extends State<HomeScreen> {
               // Search Bar
               Padding(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 padding: const EdgeInsets.all(16),
                 child: Container(
                   decoration: BoxDecoration(
@@ -255,6 +301,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     builder: (context, languageProvider, child) {
                       return TextField(
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 padding: const EdgeInsets.all(16.0),
                 child: Consumer<LanguageProvider>(
                   builder: (context, languageProvider, child) {
@@ -271,11 +319,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                       child: TextField(
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                         controller: _searchController,
                         focusNode: _searchFocusNode,
                         decoration: InputDecoration(
                           hintText: languageProvider.translate('search'),
+<<<<<<< HEAD
 <<<<<<< HEAD
                           hintStyle: TextStyle(color: theme.hintColor),
                           prefixIcon: Icon(Icons.search, color: theme.iconTheme.color),
@@ -283,10 +335,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               ? IconButton(
                             icon: Icon(Icons.clear, color: theme.iconTheme.color),
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                           prefixIcon: const Icon(Icons.search),
                           suffixIcon: _searchController.text.isNotEmpty
                               ? IconButton(
                             icon: const Icon(Icons.clear),
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                             onPressed: _clearSearch,
                           )
@@ -298,16 +355,22 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
 <<<<<<< HEAD
+<<<<<<< HEAD
                         style: TextStyle(color: theme.textTheme.bodyLarge!.color),
                         onChanged: _onSearchChanged,
                       );
                     },
                   ),
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                         onChanged: _onSearchChanged,
                       ),
                     );
                   },
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 ),
               ),
@@ -326,7 +389,11 @@ class _HomeScreenState extends State<HomeScreen> {
                               : '${dataProvider.scientists.length} results found',
                           style: TextStyle(
 <<<<<<< HEAD
+<<<<<<< HEAD
                             color: theme.colorScheme.secondary,
+=======
+                            color: Theme.of(context).colorScheme.secondary,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                             color: Theme.of(context).colorScheme.secondary,
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -353,7 +420,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             Icons.search_off,
                             size: 80,
 <<<<<<< HEAD
+<<<<<<< HEAD
                             color: theme.colorScheme.secondary.withOpacity(0.5),
+=======
+                            color: Theme.of(context).colorScheme.secondary.withOpacity(0.5),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                             color: Theme.of(context).colorScheme.secondary.withOpacity(0.5),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -362,8 +433,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(
                             languageProvider.translate('noScientists'),
 <<<<<<< HEAD
+<<<<<<< HEAD
                             style: theme.textTheme.titleMedium!.copyWith(
                               color: theme.colorScheme.secondary,
+=======
+                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                              color: Theme.of(context).colorScheme.secondary,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                             style: Theme.of(context).textTheme.titleMedium?.copyWith(
                               color: Theme.of(context).colorScheme.secondary,
@@ -379,9 +455,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ? 'پاک کردن جستجو'
                                     : 'Clear search',
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 style: TextStyle(
                                   color: theme.colorScheme.primary,
                                 ),
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                               ),
@@ -391,6 +470,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   },
                 )
+<<<<<<< HEAD
 <<<<<<< HEAD
                     : ListView.separated(
                   padding: const EdgeInsets.symmetric(
@@ -418,6 +498,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   },
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                     : RefreshIndicator(
                   onRefresh: () async {
                     // Refresh logic if needed
@@ -448,6 +530,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       );
                     },
                   ),
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 ),
               ),
@@ -460,6 +545,7 @@ class _HomeScreenState extends State<HomeScreen> {
           return FloatingActionButton.extended(
             onPressed: () => _addScientist(context),
 <<<<<<< HEAD
+<<<<<<< HEAD
             icon: Icon(Icons.add, color: theme.colorScheme.onPrimary),
             label: Text(
               languageProvider.translate('addScientist'),
@@ -468,10 +554,15 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: theme.colorScheme.primary,
             foregroundColor: theme.colorScheme.onPrimary,
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
             icon: const Icon(Icons.add),
             label: Text(languageProvider.translate('addScientist')),
             backgroundColor: Theme.of(context).colorScheme.primary,
             foregroundColor: Theme.of(context).colorScheme.onPrimary,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
             elevation: 6,
             shape: RoundedRectangleBorder(
@@ -508,13 +599,17 @@ class _HomeScreenState extends State<HomeScreen> {
   void _deleteScientist(BuildContext context, int index) {
     final languageProvider = Provider.of<LanguageProvider>(context, listen: false);
 <<<<<<< HEAD
+<<<<<<< HEAD
     final theme = Theme.of(context);
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+<<<<<<< HEAD
 <<<<<<< HEAD
         title: Text(
           languageProvider.translate('delete'),
@@ -529,6 +624,10 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text(languageProvider.translate('delete')),
         content: Text(languageProvider.translate('deleteConfirm')),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
+        title: Text(languageProvider.translate('delete')),
+        content: Text(languageProvider.translate('deleteConfirm')),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -538,7 +637,13 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Text(
               languageProvider.translate('no'),
 <<<<<<< HEAD
+<<<<<<< HEAD
               style: TextStyle(color: theme.colorScheme.secondary),
+=======
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
               style: TextStyle(
                 color: Theme.of(context).colorScheme.secondary,
@@ -559,6 +664,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         : 'Scientist deleted successfully',
                   ),
 <<<<<<< HEAD
+<<<<<<< HEAD
                   backgroundColor: theme.colorScheme.error,
                   behavior: SnackBarBehavior.floating,
                   shape: RoundedRectangleBorder(
@@ -567,12 +673,19 @@ class _HomeScreenState extends State<HomeScreen> {
 =======
                   backgroundColor: Theme.of(context).colorScheme.error,
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
+                  backgroundColor: Theme.of(context).colorScheme.error,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 ),
               );
             },
             style: ElevatedButton.styleFrom(
 <<<<<<< HEAD
+<<<<<<< HEAD
               backgroundColor: Colors.red,
+=======
+              backgroundColor: Theme.of(context).colorScheme.error,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
               backgroundColor: Theme.of(context).colorScheme.error,
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -596,13 +709,17 @@ class _HomeScreenState extends State<HomeScreen> {
   void _exitApp(BuildContext context) {
     final languageProvider = Provider.of<LanguageProvider>(context, listen: false);
 <<<<<<< HEAD
+<<<<<<< HEAD
     final theme = Theme.of(context);
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+<<<<<<< HEAD
 <<<<<<< HEAD
         title: Text(
           languageProvider.translate('exit'),
@@ -611,14 +728,21 @@ class _HomeScreenState extends State<HomeScreen> {
 =======
         title: Text(languageProvider.translate('exit')),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
+        title: Text(languageProvider.translate('exit')),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
         content: Text(
           languageProvider.isPersian
               ? 'آیا می‌خواهید از برنامه خارج شوید؟'
               : 'Do you want to exit the app?',
 <<<<<<< HEAD
+<<<<<<< HEAD
           style: TextStyle(color: theme.textTheme.bodyLarge!.color),
         ),
         backgroundColor: theme.dialogTheme.backgroundColor,
+=======
+        ),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
         ),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -629,10 +753,14 @@ class _HomeScreenState extends State<HomeScreen> {
           TextButton(
             onPressed: () => Navigator.pop(context),
 <<<<<<< HEAD
+<<<<<<< HEAD
             child: Text(
               languageProvider.translate('no'),
               style: TextStyle(color: theme.colorScheme.secondary),
             ),
+=======
+            child: Text(languageProvider.translate('no')),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
             child: Text(languageProvider.translate('no')),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -641,6 +769,11 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () {
               Navigator.pop(context);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+              // In production, use proper exit method
+              // SystemNavigator.pop();
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
               // In production, use proper exit method
               // SystemNavigator.pop();

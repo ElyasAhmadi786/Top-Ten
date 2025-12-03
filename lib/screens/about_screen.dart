@@ -66,7 +66,11 @@ This application is developed with Flutter.''',
                   languageProvider.translate('aboutDeveloper'),
                   languageProvider.isPersian
 <<<<<<< HEAD
+<<<<<<< HEAD
                       ? '''نام: توسعه دهنده موبایل
+=======
+                      ? '''نام: الیاس احمدی
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                       ? '''نام: الیاس احمدی
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -77,7 +81,11 @@ This application is developed with Flutter.''',
 
 این اولین اپلیکیشن من با فریمورک Flutter است که به عنوان پروژه آموزشی توسعه داده شده است. امیدوارم برای کاربران مفید باشد و اطلاعات ارزشمندی درباره دانشمندان بزرگ جهان ارائه دهد.'''
 <<<<<<< HEAD
+<<<<<<< HEAD
                       : '''Name: Flutter Developer
+=======
+                      : '''Name: Elyas Ahmadi
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                       : '''Name: Elyas Ahmadi
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204

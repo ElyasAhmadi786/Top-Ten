@@ -14,6 +14,11 @@ class ScientistDetailScreen extends StatelessWidget {
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    } else {
+      throw 'Could not launch $url';
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
     } else {
       throw 'Could not launch $url';
@@ -24,8 +29,11 @@ class ScientistDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     final theme = Theme.of(context);
 
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
     return Scaffold(
@@ -42,17 +50,23 @@ class ScientistDetailScreen extends StatelessWidget {
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
 <<<<<<< HEAD
+<<<<<<< HEAD
                     color: theme.colorScheme.background,
                     child: Icon(
                       Icons.person,
                       size: 100,
                       color: theme.colorScheme.secondary,
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                     color: Colors.grey[300],
                     child: const Icon(
                       Icons.person,
                       size: 100,
                       color: Colors.grey,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                     ),
                   );
@@ -63,6 +77,7 @@ class ScientistDetailScreen extends StatelessWidget {
                   return Text(
                     languageProvider.isPersian ? scientist.name : scientist.nameEn,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -72,6 +87,8 @@ class ScientistDetailScreen extends StatelessWidget {
                           blurRadius: 8,
                           color: Colors.black.withOpacity(0.8),
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                     style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -79,6 +96,9 @@ class ScientistDetailScreen extends StatelessWidget {
                         Shadow(
                           blurRadius: 4,
                           color: Colors.black,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                         ),
                       ],
@@ -89,7 +109,10 @@ class ScientistDetailScreen extends StatelessWidget {
               centerTitle: true,
             ),
 <<<<<<< HEAD
+<<<<<<< HEAD
             backgroundColor: theme.colorScheme.primary,
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
           ),
@@ -117,7 +140,11 @@ class ScientistDetailScreen extends StatelessWidget {
                         languageProvider.translate('birthInfo'),
                         scientist.birthInfo,
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Icons.calendar_today,
+=======
+                        Icons.cake_outlined,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                         Icons.cake_outlined,
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -131,7 +158,11 @@ class ScientistDetailScreen extends StatelessWidget {
                         languageProvider.translate('achievements'),
                         scientist.achievements,
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Icons.emoji_events,
+=======
+                        Icons.emoji_events_outlined,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                         Icons.emoji_events_outlined,
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -146,7 +177,11 @@ class ScientistDetailScreen extends StatelessWidget {
                           languageProvider.translate('deathInfo'),
                           scientist.deathInfo,
 <<<<<<< HEAD
+<<<<<<< HEAD
                           Icons.restaurant_menu,
+=======
+                          Icons.restaurant_menu_outlined,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                           Icons.restaurant_menu_outlined,
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -161,6 +196,7 @@ class ScientistDetailScreen extends StatelessWidget {
                           child: ElevatedButton.icon(
                             onPressed: () => _launchWebsite(scientist.website),
 <<<<<<< HEAD
+<<<<<<< HEAD
                             icon: Icon(
                               Icons.language,
                               color: theme.colorScheme.onPrimary,
@@ -173,13 +209,22 @@ class ScientistDetailScreen extends StatelessWidget {
                             icon: const Icon(Icons.language),
                             label: Text(languageProvider.translate('moreInfo')),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
+                            icon: const Icon(Icons.language),
+                            label: Text(languageProvider.translate('moreInfo')),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                             style: ElevatedButton.styleFrom(
                               padding: const EdgeInsets.symmetric(vertical: 16),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
 <<<<<<< HEAD
+<<<<<<< HEAD
                               backgroundColor: theme.colorScheme.primary,
+=======
+                              backgroundColor: Theme.of(context).colorScheme.primary,
+                              foregroundColor: Theme.of(context).colorScheme.onPrimary,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                               backgroundColor: Theme.of(context).colorScheme.primary,
                               foregroundColor: Theme.of(context).colorScheme.onPrimary,
@@ -202,6 +247,7 @@ class ScientistDetailScreen extends StatelessWidget {
 
   Widget _buildSection(BuildContext context, String title, String content, IconData icon) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     final theme = Theme.of(context);
 
     return Card(
@@ -209,6 +255,8 @@ class ScientistDetailScreen extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
     return Container(
       decoration: BoxDecoration(
         color: Theme.of(context).cardTheme.color,
@@ -220,6 +268,9 @@ class ScientistDetailScreen extends StatelessWidget {
             offset: const Offset(0, 3),
           ),
         ],
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       ),
       child: Padding(
@@ -230,10 +281,14 @@ class ScientistDetailScreen extends StatelessWidget {
             Row(
               children: [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Icon(
                   icon,
                   color: theme.colorScheme.primary,
                 ),
+=======
+                Icon(icon, color: Theme.of(context).colorScheme.primary),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                 Icon(icon, color: Theme.of(context).colorScheme.primary),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -244,7 +299,11 @@ class ScientistDetailScreen extends StatelessWidget {
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     color: theme.colorScheme.primary,
+=======
+                    color: Theme.of(context).colorScheme.primary,
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
                     color: Theme.of(context).colorScheme.primary,
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -255,7 +314,11 @@ class ScientistDetailScreen extends StatelessWidget {
             const SizedBox(height: 12),
             Divider(
 <<<<<<< HEAD
+<<<<<<< HEAD
               color: theme.dividerColor,
+=======
+              color: Theme.of(context).dividerColor.withOpacity(0.3),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
               color: Theme.of(context).dividerColor.withOpacity(0.3),
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -265,7 +328,11 @@ class ScientistDetailScreen extends StatelessWidget {
             Text(
               content,
 <<<<<<< HEAD
+<<<<<<< HEAD
               style: theme.textTheme.bodyLarge!.copyWith(
+=======
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204

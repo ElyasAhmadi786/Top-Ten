@@ -9,8 +9,11 @@ class ThemeProvider extends ChangeNotifier {
       : _buildLightTheme();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   bool get isDarkMode => _themeMode == ThemeMode.dark;
 
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
   static ThemeData _buildLightTheme() {
@@ -18,16 +21,22 @@ class ThemeProvider extends ChangeNotifier {
       useMaterial3: true,
       brightness: Brightness.light,
 <<<<<<< HEAD
+<<<<<<< HEAD
       colorScheme: ColorScheme.fromSeed(
         seedColor: Colors.deepPurple,
         brightness: Brightness.light,
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       primaryColor: Colors.deepPurple,
       colorScheme: const ColorScheme.light(
         primary: Colors.deepPurple,
         secondary: Colors.amber,
         background: Colors.white,
         surface: Colors.white,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       ),
       scaffoldBackgroundColor: Colors.white,
@@ -43,6 +52,7 @@ class ThemeProvider extends ChangeNotifier {
         ),
       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
       cardTheme: const CardThemeData(
         elevation: 4,
         shape: RoundedRectangleBorder(
@@ -51,12 +61,17 @@ class ThemeProvider extends ChangeNotifier {
         color: Colors.white,
         surfaceTintColor: Colors.white,
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       cardTheme: CardThemeData(
         elevation: 4,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
         color: Colors.white,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -65,7 +80,11 @@ class ThemeProvider extends ChangeNotifier {
       ),
       textTheme: const TextTheme(
 <<<<<<< HEAD
+<<<<<<< HEAD
         displayLarge: TextStyle(
+=======
+        titleLarge: TextStyle(
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
         titleLarge: TextStyle(
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -74,12 +93,16 @@ class ThemeProvider extends ChangeNotifier {
           color: Colors.black87,
         ),
 <<<<<<< HEAD
+<<<<<<< HEAD
         displayMedium: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.bold,
           color: Colors.black87,
         ),
         displaySmall: TextStyle(
+=======
+        titleMedium: TextStyle(
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
         titleMedium: TextStyle(
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
@@ -91,6 +114,7 @@ class ThemeProvider extends ChangeNotifier {
           fontSize: 16,
           color: Colors.black87,
         ),
+<<<<<<< HEAD
 <<<<<<< HEAD
         bodyMedium: TextStyle(
           fontSize: 14,
@@ -165,6 +189,8 @@ class ThemeProvider extends ChangeNotifier {
         ),
 =======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       ),
     );
   }
@@ -174,6 +200,7 @@ class ThemeProvider extends ChangeNotifier {
       useMaterial3: true,
       brightness: Brightness.dark,
 <<<<<<< HEAD
+<<<<<<< HEAD
       colorScheme: ColorScheme.fromSeed(
         seedColor: Colors.deepPurple,
         brightness: Brightness.dark,
@@ -182,6 +209,8 @@ class ThemeProvider extends ChangeNotifier {
       appBarTheme: const AppBarTheme(
         backgroundColor: Color(0xFF1E1E1E),
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       primaryColor: Colors.black,
       colorScheme: const ColorScheme.dark(
         primary: Colors.black,
@@ -192,6 +221,9 @@ class ThemeProvider extends ChangeNotifier {
       scaffoldBackgroundColor: Colors.black87,
       appBarTheme: const AppBarTheme(
         backgroundColor: Colors.black,
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
         foregroundColor: Colors.white,
         centerTitle: true,
@@ -202,6 +234,7 @@ class ThemeProvider extends ChangeNotifier {
           ),
         ),
       ),
+<<<<<<< HEAD
 <<<<<<< HEAD
       cardTheme: const CardThemeData(
         elevation: 4,
@@ -218,6 +251,8 @@ class ThemeProvider extends ChangeNotifier {
       textTheme: const TextTheme(
         displayLarge: TextStyle(
 =======
+=======
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       cardTheme: CardThemeData(
         elevation: 4,
         shape: RoundedRectangleBorder(
@@ -231,11 +266,15 @@ class ThemeProvider extends ChangeNotifier {
       ),
       textTheme: const TextTheme(
         titleLarge: TextStyle(
+<<<<<<< HEAD
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
           fontSize: 28,
           fontWeight: FontWeight.bold,
           color: Colors.white,
         ),
+<<<<<<< HEAD
 <<<<<<< HEAD
         displayMedium: TextStyle(
           fontSize: 22,
@@ -246,12 +285,16 @@ class ThemeProvider extends ChangeNotifier {
 =======
         titleMedium: TextStyle(
 >>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
+=======
+        titleMedium: TextStyle(
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
           fontSize: 20,
           fontWeight: FontWeight.bold,
           color: Colors.white,
         ),
         bodyLarge: TextStyle(
           fontSize: 16,
+<<<<<<< HEAD
 <<<<<<< HEAD
           color: Colors.white,
         ),
@@ -326,6 +369,10 @@ class ThemeProvider extends ChangeNotifier {
           ),
           padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
         ),
+=======
+          color: Colors.white70,
+        ),
+>>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
 =======
           color: Colors.white70,
         ),
