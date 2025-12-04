@@ -41,9 +41,6 @@ A Flutter application showcasing the world's most distinguished scientists with 
 - Dart SDK 3.3.0 or higher
 - Android Studio/VSCode with Flutter extension
 
-### Steps
-1. Clone the repository:
-```bash
 <img width="274" height="539" alt="Screenshot 2025-12-04 000314" src="https://github.com/user-attachments/assets/e5f51e89-97db-4b03-939c-ae9ffffbc495" />
 <img width="315" height="572" alt="Screenshot 2025-12-04 144927" src="https://github.com/user-attachments/assets/94c66d33-6b39-475c-9798-f776258c9db3" />
 <img width="306" height="576" alt="Screenshot 2025-12-04 144851" src="https://github.com/user-attachments/assets/3ef47538-9d20-4bbd-8986-2f6317c71a25" />
@@ -56,3 +53,4 @@ A Flutter application showcasing the world's most distinguished scientists with 
 <img width="273" height="544" alt="Screenshot 2025-12-04 023111" src="https://github.com/user-attachments/assets/3f0fc992-59f1-4d3d-9796-78b412377978" />
 
 git clone <repository-url>
+
