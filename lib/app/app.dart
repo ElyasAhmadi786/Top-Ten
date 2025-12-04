@@ -22,7 +22,7 @@ class ScientificApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'دانشمندان برجسته',
             theme: themeProvider.currentTheme,
-            home: const SplashScreen(),
+            home: const SplashScreen(fromExit: false), // اصلاح شده: false
           );
         },
       ),

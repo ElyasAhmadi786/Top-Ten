@@ -5,7 +5,8 @@ class Scientist {
   final String achievements;
   final String deathInfo;
   final String website;
-  final String imageAsset;
+  final String? imageAsset;  // For asset images
+  final String? imageFile;   // For gallery/camera images (file path)
 
   Scientist({
     required this.name,
@@ -14,7 +15,8 @@ class Scientist {
     required this.achievements,
     required this.deathInfo,
     required this.website,
-    required this.imageAsset,
+    this.imageAsset,
+    this.imageFile,
   });
 
   Scientist copyWith({
@@ -25,6 +27,7 @@ class Scientist {
     String? deathInfo,
     String? website,
     String? imageAsset,
+    String? imageFile,
   }) {
     return Scientist(
       name: name ?? this.name,
@@ -34,6 +37,7 @@ class Scientist {
       deathInfo: deathInfo ?? this.deathInfo,
       website: website ?? this.website,
       imageAsset: imageAsset ?? this.imageAsset,
+      imageFile: imageFile ?? this.imageFile,
     );
   }
 }

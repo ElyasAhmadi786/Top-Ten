@@ -42,7 +42,7 @@ class _AddEditScientistScreenState extends State<AddEditScientistScreen> {
       _achievementsController.text = widget.scientist!.achievements;
       _deathController.text = widget.scientist!.deathInfo;
       _websiteController.text = widget.scientist!.website;
-      _imagePath = widget.scientist!.imageAsset;
+      _imagePath = widget.scientist!.imageAsset!;
     }
   }
 

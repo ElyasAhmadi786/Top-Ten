@@ -13,29 +13,13 @@ class ScientistDetailScreen extends StatelessWidget {
     final uri = Uri.parse(url);
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    } else {
-      throw 'Could not launch $url';
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-    } else {
-      throw 'Could not launch $url';
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
     }
   }
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-<<<<<<< HEAD
     final theme = Theme.of(context);
 
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -45,29 +29,15 @@ class ScientistDetailScreen extends StatelessWidget {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                scientist.imageAsset,
+                scientist.imageAsset!,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
-<<<<<<< HEAD
-<<<<<<< HEAD
                     color: theme.colorScheme.background,
                     child: Icon(
                       Icons.person,
                       size: 100,
                       color: theme.colorScheme.secondary,
-=======
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-                    color: Colors.grey[300],
-                    child: const Icon(
-                      Icons.person,
-                      size: 100,
-                      color: Colors.grey,
-<<<<<<< HEAD
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                     ),
                   );
                 },
@@ -76,8 +46,6 @@ class ScientistDetailScreen extends StatelessWidget {
                 builder: (context, languageProvider, child) {
                   return Text(
                     languageProvider.isPersian ? scientist.name : scientist.nameEn,
-<<<<<<< HEAD
-<<<<<<< HEAD
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -86,20 +54,6 @@ class ScientistDetailScreen extends StatelessWidget {
                         Shadow(
                           blurRadius: 8,
                           color: Colors.black.withOpacity(0.8),
-=======
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                          blurRadius: 4,
-                          color: Colors.black,
-<<<<<<< HEAD
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                         ),
                       ],
                     ),
@@ -108,13 +62,7 @@ class ScientistDetailScreen extends StatelessWidget {
               ),
               centerTitle: true,
             ),
-<<<<<<< HEAD
-<<<<<<< HEAD
             backgroundColor: theme.colorScheme.primary,
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
           ),
           SliverToBoxAdapter(
             child: Padding(
@@ -139,15 +87,7 @@ class ScientistDetailScreen extends StatelessWidget {
                         context,
                         languageProvider.translate('birthInfo'),
                         scientist.birthInfo,
-<<<<<<< HEAD
-<<<<<<< HEAD
                         Icons.calendar_today,
-=======
-                        Icons.cake_outlined,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-                        Icons.cake_outlined,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                       ),
 
                       const SizedBox(height: 20),
@@ -157,15 +97,7 @@ class ScientistDetailScreen extends StatelessWidget {
                         context,
                         languageProvider.translate('achievements'),
                         scientist.achievements,
-<<<<<<< HEAD
-<<<<<<< HEAD
                         Icons.emoji_events,
-=======
-                        Icons.emoji_events_outlined,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-                        Icons.emoji_events_outlined,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                       ),
 
                       const SizedBox(height: 20),
@@ -176,15 +108,7 @@ class ScientistDetailScreen extends StatelessWidget {
                           context,
                           languageProvider.translate('deathInfo'),
                           scientist.deathInfo,
-<<<<<<< HEAD
-<<<<<<< HEAD
                           Icons.restaurant_menu,
-=======
-                          Icons.restaurant_menu_outlined,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-                          Icons.restaurant_menu_outlined,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                         ),
 
                       if (scientist.deathInfo.isNotEmpty) const SizedBox(height: 20),
@@ -195,8 +119,6 @@ class ScientistDetailScreen extends StatelessWidget {
                           width: double.infinity,
                           child: ElevatedButton.icon(
                             onPressed: () => _launchWebsite(scientist.website),
-<<<<<<< HEAD
-<<<<<<< HEAD
                             icon: Icon(
                               Icons.language,
                               color: theme.colorScheme.onPrimary,
@@ -205,30 +127,12 @@ class ScientistDetailScreen extends StatelessWidget {
                               languageProvider.translate('moreInfo'),
                               style: TextStyle(color: theme.colorScheme.onPrimary),
                             ),
-=======
-                            icon: const Icon(Icons.language),
-                            label: Text(languageProvider.translate('moreInfo')),
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-                            icon: const Icon(Icons.language),
-                            label: Text(languageProvider.translate('moreInfo')),
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                             style: ElevatedButton.styleFrom(
                               padding: const EdgeInsets.symmetric(vertical: 16),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
-<<<<<<< HEAD
-<<<<<<< HEAD
                               backgroundColor: theme.colorScheme.primary,
-=======
-                              backgroundColor: Theme.of(context).colorScheme.primary,
-                              foregroundColor: Theme.of(context).colorScheme.onPrimary,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-                              backgroundColor: Theme.of(context).colorScheme.primary,
-                              foregroundColor: Theme.of(context).colorScheme.onPrimary,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                             ),
                           ),
                         ),
@@ -246,32 +150,12 @@ class ScientistDetailScreen extends StatelessWidget {
   }
 
   Widget _buildSection(BuildContext context, String title, String content, IconData icon) {
-<<<<<<< HEAD
-<<<<<<< HEAD
     final theme = Theme.of(context);
 
     return Card(
       elevation: 4,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
-=======
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-    return Container(
-      decoration: BoxDecoration(
-        color: Theme.of(context).cardTheme.color,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 6,
-            offset: const Offset(0, 3),
-          ),
-        ],
-<<<<<<< HEAD
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
       ),
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -280,62 +164,30 @@ class ScientistDetailScreen extends StatelessWidget {
           children: [
             Row(
               children: [
-<<<<<<< HEAD
-<<<<<<< HEAD
                 Icon(
                   icon,
                   color: theme.colorScheme.primary,
                 ),
-=======
-                Icon(icon, color: Theme.of(context).colorScheme.primary),
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-                Icon(icon, color: Theme.of(context).colorScheme.primary),
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 const SizedBox(width: 12),
                 Text(
                   title,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-<<<<<<< HEAD
-<<<<<<< HEAD
                     color: theme.colorScheme.primary,
-=======
-                    color: Theme.of(context).colorScheme.primary,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-                    color: Theme.of(context).colorScheme.primary,
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                   ),
                 ),
               ],
             ),
             const SizedBox(height: 12),
             Divider(
-<<<<<<< HEAD
-<<<<<<< HEAD
               color: theme.dividerColor,
-=======
-              color: Theme.of(context).dividerColor.withOpacity(0.3),
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-              color: Theme.of(context).dividerColor.withOpacity(0.3),
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
               height: 1,
             ),
             const SizedBox(height: 12),
             Text(
               content,
-<<<<<<< HEAD
-<<<<<<< HEAD
               style: theme.textTheme.bodyLarge!.copyWith(
-=======
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
-=======
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
->>>>>>> 728eedbecc37ce6069db43da2578513a865ef204
                 height: 1.6,
               ),
               textAlign: TextAlign.justify,

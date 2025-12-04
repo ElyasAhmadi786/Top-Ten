@@ -78,7 +78,15 @@ flutter:
     - assets/Stephen Hawking.jpg
     - assets/Thomas Edison.jpg
     - assets/top10.jpg
-
+  plugin:
+    platforms:
+      android:
+        package: io.flutter.plugins.imagepicker.ImagePickerPlugin
+        pluginClass: ImagePickerPlugin
+      ios:
+        pluginClass: FLTImagePickerPlugin
+      macos:
+        pluginClass: FLTImagePickerPlugin
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
